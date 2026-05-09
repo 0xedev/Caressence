@@ -307,7 +307,7 @@ function Sizes({ ctaLabel, ctaColor }) {
             </div>
             <div className="perml">&middot; ~30 applications</div>
             <div style={{ marginTop: 12 }}>
-              <CtaButton label="Buy" hue={ctaColor} onClick={() => orderWhatsApp("50")} />
+              <CtaButton label="I want this" hue={ctaColor} onClick={() => orderWhatsApp("50")} />
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@ function Sizes({ ctaLabel, ctaColor }) {
             </div>
             <div className="perml">&middot; ~60 applications</div>
             <div style={{ marginTop: 12 }}>
-              <CtaButton label="Buy" hue={ctaColor} onClick={() => orderWhatsApp("100")} />
+              <CtaButton label="I want this" hue={ctaColor} onClick={() => orderWhatsApp("100")} />
             </div>
           </div>
         </div>

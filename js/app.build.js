@@ -384,7 +384,7 @@ function Sizes({
       marginTop: 12
     }
   }, /*#__PURE__*/React.createElement(CtaButton, {
-    label: "Buy",
+    label: "I want this",
     hue: ctaColor,
     onClick: () => orderWhatsApp("50")
   })))), /*#__PURE__*/React.createElement("div", {
@@ -417,7 +417,7 @@ function Sizes({
       marginTop: 12
     }
   }, /*#__PURE__*/React.createElement(CtaButton, {
-    label: "Buy",
+    label: "I want this",
     hue: ctaColor,
     onClick: () => orderWhatsApp("100")
   })))), /*#__PURE__*/React.createElement("div", {
