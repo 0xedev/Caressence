@@ -66,7 +66,7 @@ function Hero() {
           <br/>
           <span className="accent">We made this oil to stop it!</span>
         </h1>
-        <p className="hero-sub">Apply on damp skin, right after the shower. Feel the itch disappear within 3 minutes &mdash; not hours.</p>
+        <p className="hero-sub">Apply on damp skin right after shower and feel the itch disappear within 3 minutes.</p>
 
         <div className="hero-stage">
           <img src="assets/product-50ml.webp" width="1080" height="1935" alt="Caressence Anti-Itch Body Oil 50ml" />

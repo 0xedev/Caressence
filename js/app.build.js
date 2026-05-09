@@ -85,7 +85,7 @@ function Hero() {
     className: "accent"
   }, "We made this oil to stop it!")), /*#__PURE__*/React.createElement("p", {
     className: "hero-sub"
-  }, "Apply on damp skin, right after the shower. Feel the itch disappear within 3 minutes \u2014 not hours."), /*#__PURE__*/React.createElement("div", {
+  }, "Apply on damp skin right after shower and feel the itch disappear within 3 minutes."), /*#__PURE__*/React.createElement("div", {
     className: "hero-stage"
   }, /*#__PURE__*/React.createElement("img", {
     src: "assets/product-50ml.webp",
