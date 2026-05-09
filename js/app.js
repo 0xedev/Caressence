@@ -58,7 +58,7 @@ function hueAlpha(hex, a) {
 
 /* ---------- Sections ---------- */
 
-function Hero() {
+function Hero({ ctaColor }) {
   return (
     <section className="hero" data-screen-label="Hero">
       <div className="col hero-inner">
@@ -83,6 +83,14 @@ function Hero() {
           <div><b>0%</b>Sticky residue</div>
           <div><b>21 days</b>Money-back</div>
         </div>
+
+        <div style={{ marginTop: 22 }}>
+          <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp()} />
+          <div className="cta-note">
+            <span>Nationwide shipping</span>
+            <span>21-day refund</span>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -98,14 +106,6 @@ function Story({ ctaLabel, ctaColor }) {
         <div className="pullquote">
           "The reduction of itching within 3 mins."
           <span className="min">&mdash; Product tester</span>
-        </div>
-
-        <div style={{ marginTop: 28 }}>
-          <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp()} />
-          <div className="cta-note">
-            <span>Nationwide shipping</span>
-            
-          </div>
         </div>
       </div>
     </section>
@@ -435,7 +435,7 @@ function App() {
   return (
     <>
       <Topbar stock={showStock} />
-      <Hero />
+      <Hero ctaColor={ctaColor} />
       <Story ctaLabel={ctaLabel} ctaColor={ctaColor} />
       <ReviewsTop />
       {/*<HowItWorks />*/}

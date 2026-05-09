@@ -71,7 +71,9 @@ function hueAlpha(hex, a) {
 
 /* ---------- Sections ---------- */
 
-function Hero() {
+function Hero({
+  ctaColor
+}) {
   return /*#__PURE__*/React.createElement("section", {
     className: "hero",
     "data-screen-label": "Hero"
@@ -102,7 +104,17 @@ function Hero() {
     className: "badge-foil alt"
   }, "All Skin Types"))), /*#__PURE__*/React.createElement("div", {
     className: "hero-meta"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "3 mins"), "Itch disappears"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "0%"), "Sticky residue"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "21 days"), "Money-back"))));
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "3 mins"), "Itch disappears"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "0%"), "Sticky residue"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "21 days"), "Money-back")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 22
+    }
+  }, /*#__PURE__*/React.createElement(CtaButton, {
+    label: "I want to get this product",
+    hue: ctaColor,
+    onClick: () => orderWhatsApp()
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "cta-note"
+  }, /*#__PURE__*/React.createElement("span", null, "Nationwide shipping"), /*#__PURE__*/React.createElement("span", null, "21-day refund")))));
 }
 function Story({
   ctaLabel,
@@ -121,17 +133,7 @@ function Story({
     className: "pullquote"
   }, "\"The reduction of itching within 3 mins.\"", /*#__PURE__*/React.createElement("span", {
     className: "min"
-  }, "\u2014 Product tester")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 28
-    }
-  }, /*#__PURE__*/React.createElement(CtaButton, {
-    label: "I want to get this product",
-    hue: ctaColor,
-    onClick: () => orderWhatsApp()
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "cta-note"
-  }, /*#__PURE__*/React.createElement("span", null, "Nationwide shipping")))));
+  }, "\u2014 Product tester"))));
 }
 const REVIEWS_TOP = [{
   num: 1,
@@ -563,7 +565,9 @@ function App() {
   }, [headlineFont]);
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Topbar, {
     stock: showStock
-  }), /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(Story, {
+  }), /*#__PURE__*/React.createElement(Hero, {
+    ctaColor: ctaColor
+  }), /*#__PURE__*/React.createElement(Story, {
     ctaLabel: ctaLabel,
     ctaColor: ctaColor
   }), /*#__PURE__*/React.createElement(ReviewsTop, null), /*#__PURE__*/React.createElement(HowToUse, null), /*#__PURE__*/React.createElement(Sizes, {
