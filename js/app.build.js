@@ -7,8 +7,10 @@ const {
 } = React;
 const WA_NUMBER = "+2349037232316";
 function orderWhatsApp(size) {
-  if (size) {
-    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the " + size + "ml Anti-Itch Body Oil.")}`, '_blank');
+  if (size === "50") {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the 50ml Anti-Itch Body Oil (₦9,800).")}`, '_blank');
+  } else if (size === "100") {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the 100ml Anti-Itch Body Oil (₦17,999).")}`, '_blank');
   } else {
     window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'm interested in the Anti-Itch Body Oil.")}`, '_blank');
   }
@@ -346,7 +348,6 @@ function Sizes({
   ctaLabel,
   ctaColor
 }) {
-  const [sel, setSel] = useState("100");
   return /*#__PURE__*/React.createElement("section", {
     className: "sizes",
     id: "sizes",
@@ -355,13 +356,8 @@ function Sizes({
     className: "col"
   }, /*#__PURE__*/React.createElement("span", {
     className: "kicker"
-  }, "Choose your size"), /*#__PURE__*/React.createElement("h2", null, "Try it, or ", /*#__PURE__*/React.createElement("em", null, "commit"), " to it."), /*#__PURE__*/React.createElement("label", {
-    className: "size-card",
-    onClick: () => setSel("50"),
-    style: sel === "50" ? {
-      borderColor: 'var(--c-copper)',
-      boxShadow: '0 18px 40px -16px rgba(173,102,48,.25)'
-    } : {}
+  }, "Choose your size"), /*#__PURE__*/React.createElement("h2", null, "Try it, or ", /*#__PURE__*/React.createElement("em", null, "commit"), " to it."), /*#__PURE__*/React.createElement("div", {
+    className: "size-card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "img"
   }, /*#__PURE__*/React.createElement("img", {
@@ -383,13 +379,16 @@ function Sizes({
     className: "amount"
   }, "9,800")), /*#__PURE__*/React.createElement("div", {
     className: "perml"
-  }, "196 / ml \xB7 ~30 applications"))), /*#__PURE__*/React.createElement("label", {
-    className: "size-card featured",
-    onClick: () => setSel("100"),
-    style: sel !== "100" ? {
-      borderColor: 'rgba(53,76,48,.16)',
-      boxShadow: 'none'
-    } : {}
+  }, "\xB7 ~30 applications"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 12
+    }
+  }, /*#__PURE__*/React.createElement(CtaButton, {
+    label: "I want to get this product",
+    hue: ctaColor,
+    onClick: () => orderWhatsApp("50")
+  })))), /*#__PURE__*/React.createElement("div", {
+    className: "size-card featured"
   }, /*#__PURE__*/React.createElement("div", {
     className: "ribbon"
   }, "Best Value"), /*#__PURE__*/React.createElement("div", {
@@ -413,17 +412,20 @@ function Sizes({
     className: "amount"
   }, "17,999")), /*#__PURE__*/React.createElement("div", {
     className: "perml"
-  }, "180 / ml \xB7 ~60 applications"))), /*#__PURE__*/React.createElement("div", {
+  }, "\xB7 ~60 applications"), /*#__PURE__*/React.createElement("div", {
     style: {
-      marginTop: 28
+      marginTop: 12
     }
   }, /*#__PURE__*/React.createElement(CtaButton, {
-    label: ctaLabel,
+    label: "I want to get this product",
     hue: ctaColor,
-    onClick: () => orderWhatsApp(sel)
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "cta-note"
-  }, /*#__PURE__*/React.createElement("span", null, "Ships in 24h"), /*#__PURE__*/React.createElement("span", null, "Nationwide")))));
+    onClick: () => orderWhatsApp("100")
+  })))), /*#__PURE__*/React.createElement("div", {
+    className: "cta-note",
+    style: {
+      marginTop: 18
+    }
+  }, /*#__PURE__*/React.createElement("span", null, "Ships in 24h"), /*#__PURE__*/React.createElement("span", null, "Nationwide"), /*#__PURE__*/React.createElement("span", null, "21-day refund"))));
 }
 function ReviewsBottom() {
   return /*#__PURE__*/React.createElement("section", {

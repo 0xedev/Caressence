@@ -4,8 +4,10 @@ const { useState, useEffect, useRef } = React;
 const WA_NUMBER = "+2349037232316";
 
 function orderWhatsApp(size) {
-  if (size) {
-    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the "+size+"ml Anti-Itch Body Oil.")}`, '_blank');
+  if (size === "50") {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the 50ml Anti-Itch Body Oil (₦9,800).")}`, '_blank');
+  } else if (size === "100") {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the 100ml Anti-Itch Body Oil (₦17,999).")}`, '_blank');
   } else {
     window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'm interested in the Anti-Itch Body Oil.")}`, '_blank');
   }
@@ -286,14 +288,13 @@ function HowToUse() {
 }
 
 function Sizes({ ctaLabel, ctaColor }) {
-  const [sel, setSel] = useState("100");
   return (
     <section className="sizes" id="sizes" data-screen-label="Choose size">
       <div className="col">
         <span className="kicker">Choose your size</span>
         <h2>Try it, or <em>commit</em> to it.</h2>
 
-        <label className="size-card" onClick={() => setSel("50")} style={sel === "50" ? { borderColor: 'var(--c-copper)', boxShadow: '0 18px 40px -16px rgba(173,102,48,.25)' } : {}}>
+        <div className="size-card">
           <div className="img">
             <img src="assets/product-50ml.webp" width="1080" height="1935" alt="50ml Caressence" />
           </div>
@@ -304,11 +305,14 @@ function Sizes({ ctaLabel, ctaColor }) {
               <span className="currency">₦</span>
               <span className="amount">9,800</span>
             </div>
-            <div className="perml">196 / ml &middot; ~30 applications</div>
+            <div className="perml">&middot; ~30 applications</div>
+            <div style={{ marginTop: 12 }}>
+              <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp("50")} />
+            </div>
           </div>
-        </label>
+        </div>
 
-        <label className="size-card featured" onClick={() => setSel("100")} style={sel !== "100" ? { borderColor: 'rgba(53,76,48,.16)', boxShadow: 'none' } : {}}>
+        <div className="size-card featured">
           <div className="ribbon">Best Value</div>
           <div className="img">
             <img src="assets/product-100ml.webp" width="941" height="1672" alt="100ml Caressence" />
@@ -320,17 +324,17 @@ function Sizes({ ctaLabel, ctaColor }) {
               <span className="currency">₦</span>
               <span className="amount">17,999</span>
             </div>
-            <div className="perml">180 / ml &middot; ~60 applications</div>
+            <div className="perml">&middot; ~60 applications</div>
+            <div style={{ marginTop: 12 }}>
+              <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp("100")} />
+            </div>
           </div>
-        </label>
+        </div>
 
-        <div style={{ marginTop: 28 }}>
-          <CtaButton label={ctaLabel} hue={ctaColor} onClick={() => orderWhatsApp(sel)} />
-          <div className="cta-note">
-            <span>Ships in 24h</span>
-            <span>Nationwide</span>
-            
-          </div>
+        <div className="cta-note" style={{ marginTop: 18 }}>
+          <span>Ships in 24h</span>
+          <span>Nationwide</span>
+          <span>21-day refund</span>
         </div>
       </div>
     </section>
