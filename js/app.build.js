@@ -81,9 +81,9 @@ function Hero() {
     className: "headline"
   }, "That crazy ", /*#__PURE__*/React.createElement("span", {
     className: "strike"
-  }, "itch"), " right after your shower,", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+  }, "itch"), " right after your shower?", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
     className: "accent"
-  }, "we made this oil to stop that!")), /*#__PURE__*/React.createElement("p", {
+  }, "We made this oil to stop it!")), /*#__PURE__*/React.createElement("p", {
     className: "hero-sub"
   }, "Apply on damp skin, right after the shower. Feel the itch calm down within 3 minutes \u2014 not hours."), /*#__PURE__*/React.createElement("div", {
     className: "hero-stage"
@@ -100,7 +100,7 @@ function Hero() {
     className: "badge-foil alt"
   }, "All Skin Types"))), /*#__PURE__*/React.createElement("div", {
     className: "hero-meta"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "3 min"), "Itch calms down"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "0%"), "Sticky residue"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "21 day"), "Money-back"))));
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "3 mins"), "Itch disappears"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "0%"), "Sticky residue"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("b", null, "21 days"), "Money-back"))));
 }
 function Story({
   ctaLabel,
@@ -117,7 +117,7 @@ function Story({
     className: "accent"
   }, "Caressence Anti-Itch Body Oil"), " specifically for that moment. Apply it right after your shower on damp skin and feel the itch calm down within ", /*#__PURE__*/React.createElement("strong", null, "3 minutes \u2014 not hours.")), /*#__PURE__*/React.createElement("div", {
     className: "pullquote"
-  }, "\"The reduction of itching within 5 mins.\"", /*#__PURE__*/React.createElement("span", {
+  }, "\"The reduction of itching within 3 mins.\"", /*#__PURE__*/React.createElement("span", {
     className: "min"
   }, "\u2014 Product tester")), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -141,17 +141,17 @@ const REVIEWS_TOP = [{
   poster: "videos/review-1-poster.jpg"
 }, {
   num: 2,
-  name: "Juwon",
-  quote: "Not sticky. Absorbs fast. I cream every morning now.",
-  duration: "0:52",
+  name: "Josephine",
+  quote: "After the shower, the burn-itch is gone. Honestly worth it.",
+  duration: "0:44",
   tone: "sage",
   video: "videos/review-2.mp4",
   poster: "videos/review-2-poster.jpg"
 }, {
   num: 3,
-  name: "Josephine",
-  quote: "After the shower, the burn-itch is gone. Honestly worth it.",
-  duration: "0:44",
+  name: "Juwon",
+  quote: "Not sticky. Absorbs fast. I cream every morning now.",
+  duration: "0:52",
   tone: "deep",
   video: "videos/review-3.mp4",
   poster: "videos/review-3-poster.jpg"
