@@ -174,11 +174,11 @@ function ReviewsTop() {
   return (
     <section className="reviews tight" data-screen-label="Top Reviews">
       <div className="reviews-head col">
-        <span className="kicker">Product testers</span>
+        <span className="kicker">Product users</span>
         <h2>They felt it in <em>minutes</em>.</h2>
         <div className="review-stats">
           <span className="stars">★★★★★</span>
-          <span>From our tester panel</span>
+          <span>Product reviews</span>
         </div>
       </div>
       <div className="reviews-track">

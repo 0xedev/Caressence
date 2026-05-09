@@ -247,11 +247,11 @@ function ReviewsTop() {
     className: "reviews-head col"
   }, /*#__PURE__*/React.createElement("span", {
     className: "kicker"
-  }, "Product testers"), /*#__PURE__*/React.createElement("h2", null, "They felt it in ", /*#__PURE__*/React.createElement("em", null, "minutes"), "."), /*#__PURE__*/React.createElement("div", {
+  }, "Product users"), /*#__PURE__*/React.createElement("h2", null, "They felt it in ", /*#__PURE__*/React.createElement("em", null, "minutes"), "."), /*#__PURE__*/React.createElement("div", {
     className: "review-stats"
   }, /*#__PURE__*/React.createElement("span", {
     className: "stars"
-  }, "\u2605\u2605\u2605\u2605\u2605"), /*#__PURE__*/React.createElement("span", null, "From our tester panel"))), /*#__PURE__*/React.createElement("div", {
+  }, "\u2605\u2605\u2605\u2605\u2605"), /*#__PURE__*/React.createElement("span", null, "Product reviews"))), /*#__PURE__*/React.createElement("div", {
     className: "reviews-track"
   }, REVIEWS_TOP.map((r, i) => /*#__PURE__*/React.createElement(VideoCard, _extends({
     key: i
