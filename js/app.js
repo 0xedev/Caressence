@@ -307,7 +307,7 @@ function Sizes({ ctaLabel, ctaColor }) {
             </div>
             <div className="perml">&middot; ~30 applications</div>
             <div style={{ marginTop: 12 }}>
-              <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp("50")} />
+              <CtaButton label="Buy" hue={ctaColor} onClick={() => orderWhatsApp("50")} />
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@ function Sizes({ ctaLabel, ctaColor }) {
             </div>
             <div className="perml">&middot; ~60 applications</div>
             <div style={{ marginTop: 12 }}>
-              <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp("100")} />
+              <CtaButton label="Buy" hue={ctaColor} onClick={() => orderWhatsApp("100")} />
             </div>
           </div>
         </div>
@@ -419,7 +419,7 @@ function scrollTo(sel) {
 
 const DEFAULTS = {
   ctaColor: "#9B2614",
-  ctaLabel: "I want to get this product",
+  ctaLabel: "Buy",
   headlineFont: "Cormorant Garamond",
   showSeal: false,
   showStock: true,
