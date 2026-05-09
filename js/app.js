@@ -66,7 +66,7 @@ function Hero() {
           <br/>
           <span className="accent">We made this oil to stop it!</span>
         </h1>
-        <p className="hero-sub">Apply on damp skin, right after the shower. Feel the itch calm down within 3 minutes &mdash; not hours.</p>
+        <p className="hero-sub">Apply on damp skin, right after the shower. Feel the itch disappear within 3 minutes &mdash; not hours.</p>
 
         <div className="hero-stage">
           <img src="assets/product-50ml.webp" width="1080" height="1935" alt="Caressence Anti-Itch Body Oil 50ml" />
@@ -91,9 +91,8 @@ function Story({ ctaLabel, ctaColor }) {
     <section className="story tight" data-screen-label="Story">
       <div className="col">
         <span className="kicker">The 3-minute moment</span>
-        <h2>You step out clean. Then the <em>itch</em> begins.</h2>
         <p>The moment you step out of the shower feeling clean &mdash; and then the annoying, relentless itch starts from your legs to all over your skin, <strong>and nothing seems to stop it fast enough.</strong></p>
-        <p>We made <span className="accent">Caressence Anti-Itch Body Oil</span> specifically for that moment. Apply it right after your shower on damp skin and feel the itch calm down within <strong>3 minutes &mdash; not hours.</strong></p>
+        <p>We made <span className="accent">Caressence Anti-Itch Body Oil</span> specifically for that moment. Apply it right after your shower on damp skin and feel the itch disappear within <strong>3 minutes &mdash; not hours.</strong></p>
         <div className="pullquote">
           "The reduction of itching within 3 mins."
           <span className="min">&mdash; Product tester</span>

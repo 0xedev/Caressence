@@ -85,7 +85,7 @@ function Hero() {
     className: "accent"
   }, "We made this oil to stop it!")), /*#__PURE__*/React.createElement("p", {
     className: "hero-sub"
-  }, "Apply on damp skin, right after the shower. Feel the itch calm down within 3 minutes \u2014 not hours."), /*#__PURE__*/React.createElement("div", {
+  }, "Apply on damp skin, right after the shower. Feel the itch disappear within 3 minutes \u2014 not hours."), /*#__PURE__*/React.createElement("div", {
     className: "hero-stage"
   }, /*#__PURE__*/React.createElement("img", {
     src: "assets/product-50ml.webp",
@@ -113,9 +113,9 @@ function Story({
     className: "col"
   }, /*#__PURE__*/React.createElement("span", {
     className: "kicker"
-  }, "The 3-minute moment"), /*#__PURE__*/React.createElement("h2", null, "You step out clean. Then the ", /*#__PURE__*/React.createElement("em", null, "itch"), " begins."), /*#__PURE__*/React.createElement("p", null, "The moment you step out of the shower feeling clean \u2014 and then the annoying, relentless itch starts from your legs to all over your skin, ", /*#__PURE__*/React.createElement("strong", null, "and nothing seems to stop it fast enough.")), /*#__PURE__*/React.createElement("p", null, "We made ", /*#__PURE__*/React.createElement("span", {
+  }, "The 3-minute moment"), /*#__PURE__*/React.createElement("p", null, "The moment you step out of the shower feeling clean \u2014 and then the annoying, relentless itch starts from your legs to all over your skin, ", /*#__PURE__*/React.createElement("strong", null, "and nothing seems to stop it fast enough.")), /*#__PURE__*/React.createElement("p", null, "We made ", /*#__PURE__*/React.createElement("span", {
     className: "accent"
-  }, "Caressence Anti-Itch Body Oil"), " specifically for that moment. Apply it right after your shower on damp skin and feel the itch calm down within ", /*#__PURE__*/React.createElement("strong", null, "3 minutes \u2014 not hours.")), /*#__PURE__*/React.createElement("div", {
+  }, "Caressence Anti-Itch Body Oil"), " specifically for that moment. Apply it right after your shower on damp skin and feel the itch disappear within ", /*#__PURE__*/React.createElement("strong", null, "3 minutes \u2014 not hours.")), /*#__PURE__*/React.createElement("div", {
     className: "pullquote"
   }, "\"The reduction of itching within 3 mins.\"", /*#__PURE__*/React.createElement("span", {
     className: "min"
