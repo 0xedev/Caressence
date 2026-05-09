@@ -101,7 +101,7 @@ function Story({ ctaLabel, ctaColor }) {
         </div>
 
         <div style={{ marginTop: 28 }}>
-          <CtaButton label={ctaLabel} hue={ctaColor} onClick={() => orderWhatsApp()} />
+          <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp()} />
           <div className="cta-note">
             <span>Nationwide shipping</span>
             

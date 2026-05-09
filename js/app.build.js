@@ -126,7 +126,7 @@ function Story({
       marginTop: 28
     }
   }, /*#__PURE__*/React.createElement(CtaButton, {
-    label: ctaLabel,
+    label: "I want to get this product",
     hue: ctaColor,
     onClick: () => orderWhatsApp()
   }), /*#__PURE__*/React.createElement("div", {
