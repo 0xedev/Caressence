@@ -182,9 +182,7 @@ function ReviewsTop() {
       <div className="reviews-track">
         {REVIEWS_TOP.map((r, i) => <VideoCard key={i} {...r} />)}
       </div>
-      <div className="col" style={{ marginTop: 18 }}>
-        <CtaButton label="I want to get this product" onClick={() => orderWhatsApp()} />
-      </div>
+      <div className="col" style={{ marginTop: 18 }} />
     </section>
   );
 }

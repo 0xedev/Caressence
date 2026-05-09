@@ -258,10 +258,7 @@ function ReviewsTop() {
     style: {
       marginTop: 18
     }
-  }, /*#__PURE__*/React.createElement(CtaButton, {
-    label: "I want to get this product",
-    onClick: () => orderWhatsApp()
-  })));
+  }));
 }
 function HowItWorks() {
   const benefits = [{
