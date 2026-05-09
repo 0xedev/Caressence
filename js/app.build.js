@@ -5,6 +5,14 @@ const {
   useEffect,
   useRef
 } = React;
+const WA_NUMBER = "+2349037232316";
+function orderWhatsApp(size) {
+  if (size) {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the " + size + "ml Anti-Itch Body Oil.")}`, '_blank');
+  } else {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'm interested in the Anti-Itch Body Oil.")}`, '_blank');
+  }
+}
 
 /* ---------- Reusable bits ---------- */
 
@@ -118,7 +126,7 @@ function Story({
   }, /*#__PURE__*/React.createElement(CtaButton, {
     label: ctaLabel,
     hue: ctaColor,
-    onClick: () => scrollTo("#sizes")
+    onClick: () => orderWhatsApp()
   }), /*#__PURE__*/React.createElement("div", {
     className: "cta-note"
   }, /*#__PURE__*/React.createElement("span", null, "Nationwide shipping")))));
@@ -252,7 +260,7 @@ function ReviewsTop() {
     }
   }, /*#__PURE__*/React.createElement(CtaButton, {
     label: "I want to get this product",
-    onClick: () => scrollTo("#sizes")
+    onClick: () => orderWhatsApp()
   })));
 }
 function HowItWorks() {
@@ -415,7 +423,7 @@ function Sizes({
   }, /*#__PURE__*/React.createElement(CtaButton, {
     label: ctaLabel,
     hue: ctaColor,
-    onClick: () => alert(`Selected ${sel}ml \u2014 checkout flow`)
+    onClick: () => orderWhatsApp(sel)
   }), /*#__PURE__*/React.createElement("div", {
     className: "cta-note"
   }, /*#__PURE__*/React.createElement("span", null, "Ships in 24h"), /*#__PURE__*/React.createElement("span", null, "Nationwide")))));
@@ -506,16 +514,6 @@ function Guarantee({
 }
 function Footer() {
   return /*#__PURE__*/React.createElement("footer", null, /*#__PURE__*/React.createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/React.createElement("a", {
-    href: "#"
-  }, "Ingredients"), /*#__PURE__*/React.createElement("a", {
-    href: "#"
-  }, "Shipping"), /*#__PURE__*/React.createElement("a", {
-    href: "#"
-  }, "Returns"), /*#__PURE__*/React.createElement("a", {
-    href: "#"
-  }, "Contact")), /*#__PURE__*/React.createElement("div", {
     className: "row",
     style: {
       marginBottom: 10
@@ -569,7 +567,7 @@ function App() {
   }), /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(Story, {
     ctaLabel: ctaLabel,
     ctaColor: ctaColor
-  }), /*#__PURE__*/React.createElement(ReviewsTop, null), /*#__PURE__*/React.createElement(HowItWorks, null), /*#__PURE__*/React.createElement(HowToUse, null), /*#__PURE__*/React.createElement(Sizes, {
+  }), /*#__PURE__*/React.createElement(ReviewsTop, null), /*#__PURE__*/React.createElement(HowToUse, null), /*#__PURE__*/React.createElement(Sizes, {
     ctaLabel: ctaLabel,
     ctaColor: ctaColor
   }), /*#__PURE__*/React.createElement(ReviewsBottom, null), /*#__PURE__*/React.createElement(ChatBand, null), /*#__PURE__*/React.createElement(Guarantee, {

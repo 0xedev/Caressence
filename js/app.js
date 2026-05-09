@@ -1,6 +1,16 @@
 /* global React, ReactDOM */
 const { useState, useEffect, useRef } = React;
 
+const WA_NUMBER = "+2349037232316";
+
+function orderWhatsApp(size) {
+  if (size) {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'd like to order the "+size+"ml Anti-Itch Body Oil.")}`, '_blank');
+  } else {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Hi Caressence! I'm interested in the Anti-Itch Body Oil.")}`, '_blank');
+  }
+}
+
 /* ---------- Reusable bits ---------- */
 
 function Topbar({ stock }) {
@@ -90,7 +100,7 @@ function Story({ ctaLabel, ctaColor }) {
         </div>
 
         <div style={{ marginTop: 28 }}>
-          <CtaButton label={ctaLabel} hue={ctaColor} onClick={() => scrollTo("#sizes")} />
+          <CtaButton label={ctaLabel} hue={ctaColor} onClick={() => orderWhatsApp()} />
           <div className="cta-note">
             <span>Nationwide shipping</span>
             
@@ -174,7 +184,7 @@ function ReviewsTop() {
         {REVIEWS_TOP.map((r, i) => <VideoCard key={i} {...r} />)}
       </div>
       <div className="col" style={{ marginTop: 18 }}>
-        <CtaButton label="I want to get this product" onClick={() => scrollTo("#sizes")} />
+        <CtaButton label="I want to get this product" onClick={() => orderWhatsApp()} />
       </div>
     </section>
   );
@@ -318,7 +328,7 @@ function Sizes({ ctaLabel, ctaColor }) {
         </label>
 
         <div style={{ marginTop: 28 }}>
-          <CtaButton label={ctaLabel} hue={ctaColor} onClick={() => alert(`Selected ${sel}ml \u2014 checkout flow`)} />
+          <CtaButton label={ctaLabel} hue={ctaColor} onClick={() => orderWhatsApp(sel)} />
           <div className="cta-note">
             <span>Ships in 24h</span>
             <span>Nationwide</span>
@@ -427,7 +437,7 @@ function App() {
       <Hero />
       <Story ctaLabel={ctaLabel} ctaColor={ctaColor} />
       <ReviewsTop />
-      <HowItWorks />
+      {/*<HowItWorks />*/}
       <HowToUse />
       <Sizes ctaLabel={ctaLabel} ctaColor={ctaColor} />
       <ReviewsBottom />
