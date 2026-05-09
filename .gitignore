@@ -1,0 +1,4 @@
+node_modules/
+project/
+*.mov
+.DS_Store
