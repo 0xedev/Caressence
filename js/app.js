@@ -87,8 +87,8 @@ function Hero({ ctaColor }) {
         <div style={{ marginTop: 22 }}>
           <CtaButton label="I want to get this product" hue={ctaColor} onClick={() => orderWhatsApp()} />
           <div className="cta-note">
-            <span>Nationwide shipping</span>
-            <span>21-day refund</span>
+            <span>Starting from ₦9,800</span>
+            <span>21-days guarantee</span>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ function Story({ ctaLabel, ctaColor }) {
         <p>We made <span className="accent">Caressence Anti-Itch Body Oil</span> specifically for that moment. Apply it right after your shower on damp skin and feel the itch disappear within <strong>3 minutes &mdash; not hours.</strong></p>
         <div className="pullquote">
           "The reduction of itching within 3 mins."
-          <span className="min">&mdash; Product tester</span>
+          <span className="min">&mdash; Esther A.O, Abuja</span>
         </div>
       </div>
     </section>
@@ -114,8 +114,8 @@ function Story({ ctaLabel, ctaColor }) {
 
 const REVIEWS_TOP = [
   { num: 1, name: "Isaac", quote: "The itch calmed in less than 5 minutes. I'm shocked.", duration: "0:38", tone: "warm", video: "videos/review-1.mp4", poster: "videos/review-1-poster.jpg" },
-  { num: 2, name: "Josephine", quote: "After the shower, the burn-itch is gone. Honestly worth it.", duration: "0:44", tone: "sage", video: "videos/review-2.mp4", poster: "videos/review-2-poster.jpg" },
-  { num: 3, name: "Juwon", quote: "Not sticky. Absorbs fast. I cream every morning now.", duration: "0:52", tone: "deep", video: "videos/review-3.mp4", poster: "videos/review-3-poster.jpg" },
+  { num: 2, name: "Juwon", quote: "Not sticky. Absorbs fast. I cream every morning now.", duration: "0:52", tone: "sage", video: "videos/review-3.mp4", poster: "videos/review-3-poster.jpg" },
+  { num: 3, name: "Josephine", quote: "After the shower, the burn-itch is gone. Honestly worth it.", duration: "0:44", tone: "deep", video: "videos/review-2.mp4", poster: "videos/review-2-poster.jpg" },
 ];
 
 const REVIEWS_BOTTOM = [
@@ -305,7 +305,7 @@ function Sizes({ ctaLabel, ctaColor }) {
               <span className="currency">₦</span>
               <span className="amount">9,800</span>
             </div>
-            <div className="perml">&middot; ~30 applications</div>
+            <div className="perml">Only 30 bottles left</div>
             <div style={{ marginTop: 12 }}>
               <CtaButton label="I want this" hue={ctaColor} onClick={() => orderWhatsApp("50")} />
             </div>
@@ -324,7 +324,7 @@ function Sizes({ ctaLabel, ctaColor }) {
               <span className="currency">₦</span>
               <span className="amount">17,999</span>
             </div>
-            <div className="perml">&middot; ~60 applications</div>
+            <div className="perml">Only 7 bottles left</div>
             <div style={{ marginTop: 12 }}>
               <CtaButton label="I want this" hue={ctaColor} onClick={() => orderWhatsApp("100")} />
             </div>

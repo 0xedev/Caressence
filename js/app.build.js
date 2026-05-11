@@ -114,7 +114,7 @@ function Hero({
     onClick: () => orderWhatsApp()
   }), /*#__PURE__*/React.createElement("div", {
     className: "cta-note"
-  }, /*#__PURE__*/React.createElement("span", null, "Nationwide shipping"), /*#__PURE__*/React.createElement("span", null, "21-day refund")))));
+  }, /*#__PURE__*/React.createElement("span", null, "Starting from \u20A69,800"), /*#__PURE__*/React.createElement("span", null, "21-days guarantee")))));
 }
 function Story({
   ctaLabel,
@@ -133,7 +133,7 @@ function Story({
     className: "pullquote"
   }, "\"The reduction of itching within 3 mins.\"", /*#__PURE__*/React.createElement("span", {
     className: "min"
-  }, "\u2014 Product tester"))));
+  }, "\u2014 Esther A.O, Abuja"))));
 }
 const REVIEWS_TOP = [{
   num: 1,
@@ -145,20 +145,20 @@ const REVIEWS_TOP = [{
   poster: "videos/review-1-poster.jpg"
 }, {
   num: 2,
-  name: "Josephine",
-  quote: "After the shower, the burn-itch is gone. Honestly worth it.",
-  duration: "0:44",
-  tone: "sage",
-  video: "videos/review-2.mp4",
-  poster: "videos/review-2-poster.jpg"
-}, {
-  num: 3,
   name: "Juwon",
   quote: "Not sticky. Absorbs fast. I cream every morning now.",
   duration: "0:52",
-  tone: "deep",
+  tone: "sage",
   video: "videos/review-3.mp4",
   poster: "videos/review-3-poster.jpg"
+}, {
+  num: 3,
+  name: "Josephine",
+  quote: "After the shower, the burn-itch is gone. Honestly worth it.",
+  duration: "0:44",
+  tone: "deep",
+  video: "videos/review-2.mp4",
+  poster: "videos/review-2-poster.jpg"
 }];
 const REVIEWS_BOTTOM = [{
   num: 4,
@@ -381,7 +381,7 @@ function Sizes({
     className: "amount"
   }, "9,800")), /*#__PURE__*/React.createElement("div", {
     className: "perml"
-  }, "\xB7 ~30 applications"), /*#__PURE__*/React.createElement("div", {
+  }, "Only 30 bottles left"), /*#__PURE__*/React.createElement("div", {
     style: {
       marginTop: 12
     }
@@ -414,7 +414,7 @@ function Sizes({
     className: "amount"
   }, "17,999")), /*#__PURE__*/React.createElement("div", {
     className: "perml"
-  }, "\xB7 ~60 applications"), /*#__PURE__*/React.createElement("div", {
+  }, "Only 7 bottles left"), /*#__PURE__*/React.createElement("div", {
     style: {
       marginTop: 12
     }
